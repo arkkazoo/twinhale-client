@@ -44,6 +44,11 @@ export function InhaleComponent({ inhale }: { inhale: Inhale }): React.ReactElem
           <span>{inhale.tweet.text}</span>
         </div>
         <div className="row-media">{inhale.tweet.has_media && inhale.tweet.media.media_type === 'photo' && MediaPhotoComponent(inhale.tweet.media.content_photo)}</div>
+        <div className="row-tags">
+          {inhale.tags.map((tag) => (
+            <div key={tag}>{tag}</div>
+          ))}
+        </div>
       </div>
     </article>
   )

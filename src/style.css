@@ -238,3 +238,32 @@ article {
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif;
 }
+
+.row-tags {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.row-tags div {
+  cursor: pointer;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  border-color: rgb(29, 155, 240);
+  border-width: 1px;
+  border-style: solid;
+  color: rgb(29, 155, 240);
+  border-radius: 9999px;
+
+  transition-duration: 0.2s;
+}
+
+.row-tags div:hover {
+  background-color: rgb(29, 155, 240);
+  color: white;
+}
